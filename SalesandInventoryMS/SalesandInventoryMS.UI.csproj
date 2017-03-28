@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE220FDF-3D38-4AD6-ACF5-2DEDD023FB5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SalesandInventoryMS</RootNamespace>
+    <AssemblyName>SalesandInventoryMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategory.Designer.cs">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCategoryRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCategoryRecord.Designer.cs">
+      <DependentUpon>frmCategoryRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInvoiceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInvoiceReport.Designer.cs">
+      <DependentUpon>frmInvoiceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginForm.Designer.cs">
+      <DependentUpon>frmLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProduct.Designer.cs">
+      <DependentUpon>frmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCategory.resx">
+      <DependentUpon>frmCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCategoryRecord.resx">
+      <DependentUpon>frmCategoryRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInvoiceReport.resx">
+      <DependentUpon>frmInvoiceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginForm.resx">
+      <DependentUpon>frmLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_group_people_friends-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2b35ce9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_users-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\banner_dot_net.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BlenderDesktopLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_abstract_wallpaper_7994_HD_Amazing.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\button-check_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Column-Chart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateUserback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel-banner3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-rooms.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ID1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ID2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kompozer_256x256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_user_profile_account_logout_people_man_human-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManageSellingPrice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mdiback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MDIMenuback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purchase1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Room1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Room2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Room3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Room4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Room5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoppingcart_checkout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stupid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stupid-lakes_1364309i.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\templatemo_header.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolstripback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\url.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users_group_people_friends-2561.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\web-design-banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Room51.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
