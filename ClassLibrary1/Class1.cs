@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SalesandInventoryMS.BLL
+namespace ClassLibrary1
 {
-    class BLLCategory
+    public class Class1
     {
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SalesandInventoryMS.BLL
 {
-    class BLLUser
+   public  class BLLUser
     {
     }
 }

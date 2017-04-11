@@ -1,6 +1,6 @@
 ﻿namespace SalesandInventoryMS
 {
-    partial class frmLoginForm
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.

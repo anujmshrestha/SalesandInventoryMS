@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SalesandInventoryMS
 {
-    public partial class frmLoginForm : Form
+    public partial class frmSales : Form
     {
-        public frmLoginForm()
+        public frmSales()
         {
             InitializeComponent();
-        }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
